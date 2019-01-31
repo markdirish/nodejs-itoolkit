@@ -40,7 +40,7 @@ describe('Basic Function Test', () => {
       conn.run((str) => {
         const results = xt.xmlToJson(str);
         results.forEach((result) => {
-          if (Object.prototype.hasOwnProperty.call(result, 'success')) { 
+          if (Object.prototype.hasOwnProperty.call(result, 'success')) {
             assert(result.success === true);
           }
         });
